@@ -7,9 +7,9 @@ internal class Program
         byte grandmothers = Convert.ToByte(Console.ReadLine());
         const byte timeReceipt = 10;
         const byte hour = 60;
-        ushort timeWaiting = grandmothers * timeReceipt;
-        ushort timeHour = timeWaiting / hour;
-        byte timeMinuts = timeWaiting % hour;
+        int timeWaiting = grandmothers * timeReceipt;
+        int timeHour = timeWaiting / hour;
+        int timeMinuts = timeWaiting % hour;
         Console.WriteLine($"Если не будет всяких (я только спросить), то ждать осталось {timeHour} часов и {timeMinuts} минут");
     }
 }
